@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Thumbnail Downloader</h1>
+        <div class="input-group">
+            <input type="text" id="videoUrl" placeholder="Paste YouTube video URL here...">
+            <button id="fetchBtn">Get Thumbnails</button>
+        </div>
+        
+        <div id="result" class="hidden">
+            <div class="video-info">
+                <h2 id="videoTitle"></h2>
+                <div class="copy-buttons">
+                    <button class="copy-btn" data-target="videoTitle">Copy Title</button>
+                    <button class="copy-btn" data-target="videoId">Copy Video ID</button>
+                    <button class="copy-btn" data-target="videoDesc">Copy Description</button>
+                </div>
+                <p id="videoDesc"></p>
+                <p id="videoId" class="hidden"></p>
+            </div>
+            
+            <div class="thumbnails">
+                <h3>Available Thumbnails</h3>
+                <div class="thumbnail-grid">
+                    <!-- Thumbnails will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
